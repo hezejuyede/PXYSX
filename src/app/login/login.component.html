@@ -1,0 +1,75 @@
+<section class="ysx-login">
+  <div class="clearfix ysx-register-top">
+    <div class="fl ysx-register-top-logo"></div>
+    <h1 class="fl ysx-register-top-title">欢迎登录</h1>
+  </div>
+  <div class="ysx-register-text">
+    <i class="iconfont icon-zhushi"></i>
+    <span class="">依据《网络安全法》，为保障您的账户安全和正常使用， 请尽快完成手机号验证！ 新版《亿成隐私政策》已上线， 将更有利于保护您的个人隐私。
+      </span>
+  </div>
+  <div class="ysx-register-center">
+    <img src="../../assets/imgs/banner1.jpg" alt="" class="">
+    <div class="ysx-register-center-div">
+      <div class="center-div-top">
+        <div class="center-div-top-sm" (click)="SmLogin($evet)">扫码登录</div>
+        <div class="center-div-top-zh" (click)="ZhLogin($event)">账户登录</div>
+      </div>
+      <div [ngClass]="{smLogin:isSmLogin}">
+        <div class="center-div-center" >
+          <div class="clearfix center-div-center-leftImg">
+            <img src="../../assets/imgs/show.png" alt="" class="">
+          </div>
+          <div class="clearfix center-div-center-rightImg">
+            <img src="../../assets/imgs/phone-orange.png" alt="">
+          </div>
+          <div class="center-div-center-open">
+            打开手机亿成   扫描二维码
+          </div>
+          <div class="center-div-center-sr">
+            <i class="iconfont icon-shuru"></i>
+            <span>免输入</span>
+            <i class="iconfont icon-kuaisu"></i>
+            <span>更快</span>
+            <i class="iconfont icon-unie613"></i>
+            <span>更安全</span>
+          </div>
+        </div>
+      </div>
+      <div [ngClass]="{zhLogin:isZhLogin}">
+        <div class="center-div-center2">
+          <div class="center2-iphone">
+            <i class="iconfont icon-phone"></i>
+            <input type="text" placeholder="邮箱/用户名/已验证手机">
+          </div>
+          <div class="center2-password">
+            <i class="iconfont icon-mima"></i>
+            <input type="password" placeholder="请输入密码">
+          </div>
+          <div class="forgetPassword">
+            <a routerLink="ForgetPassword">忘记密码</a>
+          </div>
+          <div class="login">
+            <button type="button">登录</button>
+          </div>
+        </div>
+      </div>
+      <div class="center-div-center-bottom">
+        <div class="center-div-center-bottom-left">
+          <div class="left-qq" (click)="QQLogin($event)">
+            <i class="iconfont icon-qq"></i>
+            <span>QQ</span>
+          </div>
+          <div class="left-weixin" (click)="WXLogin($event)">
+            <i class="iconfont icon-weixin"></i>
+            <span>微信</span>
+          </div>
+        </div>
+        <div class="center-div-center-bottom-right">
+          <a routerLink="Register">注册</a>
+          <i class="iconfont icon-right-trangle"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

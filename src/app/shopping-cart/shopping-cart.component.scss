@@ -1,0 +1,185 @@
+@import "../../assets/sass/base";
+@import "../../assets/icon/iconfont.css";
+
+
+.yc-shoppingCart{
+  .yc-shoppingCart-top{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: $color-F0;
+    line-height: 50px;
+    .allGoods{
+      width: 48%;
+      padding-left: 2%;
+    }
+    .price{
+      width: 10%;
+      text-align: center;
+    }
+    .goodsNumber{
+      width: 20%;
+      text-align: center;
+    }
+    .subtotal{
+      width: 10%;
+      text-align: center;
+    }
+    .operation{
+      width: 10%;
+      text-align: center;
+    }
+
+
+
+
+  }
+  .yc-shoppingCart-center{
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+    background-color: $color-white;
+    .yc-shoppingCart-center-template{
+      height: 120px;
+      border: 1px solid$color-F0;
+      .template-left{
+        width: 48%;
+        padding-left: 2%;
+        height: 120px;
+        .template-change{
+          line-height: 100px;
+        }
+        .template-images{
+          img{
+            width: 80px;
+            height: 80px;
+            margin-top: 20px;
+          }
+
+        }
+        .template-title{
+          width: 47%;
+          height: 120px;
+          padding-left: 3%;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          p:first-child{
+            color: $color-red;
+          }
+          p:last-child{
+            color: $color-green;
+          }
+        }
+      }
+      .template-price{
+        width: 10%;
+        text-align: center;
+        line-height: 120px;
+        color: $color-red;
+        font-size: $font-size-large;
+
+      }
+      .template-number{
+        width: 20%;
+        text-align: center;
+        .template-number-addSubtraction{
+          height: 30px;
+          margin: 45px  auto;
+          border: 1px solid $color-F0;
+          .subtraction{
+            float: left;
+            width: 30%;
+            line-height: 30px;
+            background-color: $color-F0;
+            color: $color-red;
+            font-size: $font-size-medium-x;
+
+          }
+          .number{
+            float: left;
+            width: 40%;
+            line-height: 30px;
+          }
+          .add{
+            float: left;
+            width: 30%;
+            line-height: 30px;
+            background-color: $color-F0;
+            color: $color-red;
+            font-size: $font-size-medium-x;
+          }
+        }
+
+      }
+      .template-subtotal{
+        width: 10%;
+        text-align: center;
+        line-height: 120px;
+        color: $color-red;
+        font-size: $font-size-large;
+      }
+      .template-operation{
+        width: 10%;
+        text-align: center;
+        line-height: 120px;
+      }
+
+
+
+
+
+
+    }
+  }
+  .yc-shoppingCart-bottom{
+    width: 90%;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 49px;
+    background-color: $color-F0;
+    .checkAll{
+      margin-left: 2%;
+
+    }
+    .deleteGoods{
+      margin-left: 2%;
+
+    }
+    .goBalance{
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background-color: $color-red;
+      color: $color-white;
+      font-size: $font-size-large-xx;
+      margin-left: 2%;
+      cursor: pointer;
+    }
+    .allPrice{
+      margin-left: 2%;
+      span:last-child{
+        font-size: $font-size-large-xx;
+        color: $color-red;
+      }
+    }
+    .choice{
+      span:nth-child(2){
+        font-size: $font-size-large-xx;
+        color: $color-red;
+      }
+
+
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .yc-shoppingCart{
+    width: 480px;
+  }
+}

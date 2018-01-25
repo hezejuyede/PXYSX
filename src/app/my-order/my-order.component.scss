@@ -1,0 +1,106 @@
+@import "../../assets/sass/base.scss";
+@import "../../assets/icon/iconfont.css";
+.ysx-MyOrder{
+  height: 700px;
+  background-color: $color-white;
+  .MyOrder-top{
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid $color-F0;
+    height: 180px;
+    a{
+      display: block;
+      float: left;
+      width: 20%;
+      height: 90px;
+      line-height: 40px;
+      text-align: center;
+      span{
+        display: block;
+        font-size: $font-size-medium;
+        color: $color-red;
+      }
+      .icon-weifukuan{
+        font-size: 300%;
+        color: #B46CF6;
+
+      }
+      .icon-fukuan1{
+        font-size: 300%;
+        color: #00DD85;
+
+      }
+      .icon-dengdai-copy{
+        font-size: 300%;
+        color: plum;
+
+      }
+      .icon-shouhuo{
+        font-size: 300%;
+        color: yellowgreen;
+
+      }
+      .icon-yijingguanbi{
+        font-size: 300%;
+        color: #DF3033;
+
+      }
+      .icon-tuihuotuikuan{
+        font-size: 300%;
+        color: orange;
+
+      }
+      .icon-ccgl-tuihuosunyi-7{
+        font-size: 300%;
+        color: plum;
+      }
+      .icon-chulizhong{
+        font-size: 300%;
+        color: blueviolet;
+      }
+      .icon-pingjia-copy{
+        font-size: 300%;
+        color: fuchsia;
+
+      }
+      .icon-quxiaodingdan{
+        font-size: 300%;
+        color: #61AFFF;
+
+      }
+
+    }
+  }
+  .MyOrder-bottom{
+    .MyOrder-bottom-top{
+      width: 95%;
+      height: 50px;
+      line-height: 50px;
+      margin: 10px auto;
+      border: 1px solid $color-F0;
+      .MyOrder-bottom-top-left{
+        margin-left: 20px;
+        font-size: $font-size-large;
+
+      }
+      .MyOrder-bottom-top-right{
+        margin-right: 20px;
+        font-size: $font-size-large;
+
+      }
+
+    }
+    .MyOrder-bottom-bottom{
+
+
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .ysx-MyOrder{
+    width: 480px;
+  }
+}

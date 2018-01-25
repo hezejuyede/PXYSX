@@ -1,0 +1,210 @@
+@import "../../assets/sass/base";
+@import "../../assets/icon/iconfont.css";
+
+
+
+
+.ysx-login{
+  .ysx-register-top{
+    height: 100px;
+    line-height: 100px;
+    background-color: $color-white;
+    padding-left: 100px;
+    .ysx-register-top-logo{
+      width: 170px;
+      height: 50px;
+      margin-top: 25px;
+      background:url("../../assets/imgs/logo.png")no-repeat;
+    }
+    .ysx-register-top-title{
+      font-size: $font-size-large-xx;
+    }
+  }
+  .ysx-register-text {
+    background-color: $color-white;
+    height: 50px;
+    text-align: center;
+  }
+  .ysx-register-center{
+    position: relative;
+    border-bottom:1px solid$color-red ;
+    >img{
+      width: 100%;
+      height: 430px;
+      margin: 0 auto;
+    }
+    .ysx-register-center-div{
+      position: absolute;
+      top:15px;
+      right: 15px;
+      width: 400px;
+      height: 400px;
+      background-color: $color-white;
+      .center-div-top{
+        height: 40px;
+        border-bottom: 1px solid$color-red;
+        .center-div-top-sm{
+          float: left;
+          width: 50%;
+          line-height: 40px;
+          text-align: center;
+          font-size: $font-size-large;
+
+        }
+        .center-div-top-zh{
+          float: left;
+          width: 50%;
+          line-height: 40px;
+          text-align: center;
+          font-size: $font-size-large;
+
+        }
+      }
+      .center-div-center{
+        text-align: center;
+        height: 300px;
+        .center-div-center-leftImg{
+          float: left;
+          width: 50%;
+          height: 200px;
+          padding-top: 20px;
+        }
+        .center-div-center-rightImg{
+          float: right;
+          width: 50%;
+          height: 200px;
+          padding-top: 20px;
+        }
+        .center-div-center-open{
+          padding-top: 10px;
+
+        }
+        .center-div-center-sr{
+          padding-top: 20px;
+
+        }
+      }
+      .center-div-center2{
+        height: 280px;
+        padding-top: 20px;
+        .center2-iphone{
+          width: 80%;
+          height: 37px;
+          line-height: 37px;
+          margin: 0 auto;
+
+          border: 1px solid $color-F0;
+          .icon-phone{
+            padding-left: 10px;
+          }
+        }
+        .center2-password{
+          width: 80%;
+          height: 37px;
+          line-height: 37px;
+          margin: 20px auto;
+          border: 1px solid $color-F0;
+          .icon-mima{
+            padding-left: 10px;
+          }
+        }
+        .forgetPassword{
+          text-align: right;
+          padding-right: 20%;
+        }
+
+        input{
+          width: 85%;
+          height: 33px;
+          padding-left: 10px;
+
+        }
+        .login{
+          width: 80%;
+          margin: 10px auto;
+          button{
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: $color-white;
+            background-color: $color-red;
+            font-size: $font-size-large;
+            margin: 0 auto;
+          }
+        }
+
+
+
+      }
+
+    }
+    .center-div-center-bottom{
+      height: 50px;
+      border-top: 1px solid$color-red;
+      .center-div-center-bottom-left{
+        float: left;
+        padding-left: 20px;
+        .left-qq{
+          float: left;
+          width: 60px;
+          height: 20px;
+          line-height: 20px;
+          margin-top: 15px;
+          text-align: center;
+          border-right: 1px solid$color-F0;
+          cursor: pointer;
+          .icon-qq{
+            color: $color-green;
+
+          }
+        }
+        .left-weixin{
+          float: left;
+          width: 60px;
+          height: 20px;
+          line-height: 20px;
+          margin-top: 15px;
+          text-align: center;
+          cursor: pointer;
+          .icon-weixin{
+            color: $color-green;
+
+          }
+        }
+      }
+      .center-div-center-bottom-right{
+        float: right;
+        padding-right: 20px;
+        padding-top: 20px;
+        .icon-right-trangle{
+          display: block;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: $color-red;
+          line-height: 15px;
+          text-align: center;
+          color: $color-white;
+          float: right;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .smLogin{
+    display: none;
+  }
+  .zhLogin{
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  .ysx-login{
+    width: 480px;
+  }
+
+}

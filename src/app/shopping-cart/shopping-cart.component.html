@@ -1,0 +1,64 @@
+<section class="yc-shoppingCart">
+  <div class="yc-shoppingCart-top">
+    <div class="fl allGoods">全部商品:5</div>
+    <div class="fl price">单价</div>
+    <div class="fl goodsNumber">数量</div>
+    <div class="fl subtotal">小计</div>
+    <div class="fl operation">操作</div>
+  </div>
+  <div class="yc-shoppingCart-center">
+    <div class="yc-shoppingCart-center-template"
+         *ngFor="let goods of ShoppingCart;index as i">
+      <div class="fl template-left">
+        <div class="fl template-change">
+          <input type="checkbox" class="checkboxs" name="check" (click)="oneSelect(this)" >
+        </div>
+        <div class="fl template-images">
+          <img [src]="goods.img">
+        </div>
+        <div class="fl template-title">
+          <p class="">{{goods.title}}</p>
+          <p class="">{{goods.size}}</p>
+        </div>
+      </div>
+      <div class="fl template-price">
+        <span class="">{{goods.price}}</span>
+      </div>
+      <div class="fl template-number">
+        <div class="template-number-addSubtraction">
+          <div class="subtraction" (click)="SGoods($event)">-</div>
+          <div class="number">{{goods.number}}</div>
+          <div class="add"(click)="AGoods($event)">+</div>
+        </div>
+      </div>
+      <div class="fl template-subtotal">
+        <span>￥{{isGoodsPrice}}</span>
+      </div>
+      <div class="fl template-operation">
+        <span class=""(click)="deleteGoods($event)">删除</span>
+      </div>
+    </div>
+  </div>
+  <div class="yc-shoppingCart-bottom">
+    <div class="fl checkAll" (click)="allSelect($event)">
+      <input type="checkbox" id="allSelect" name="check">
+      <span >全选</span>
+    </div>
+    <div class="fl deleteGoods" (click)="DeleteGoods($event)">
+      <p class="">删除选中产品</p>
+    </div>
+    <div class="fr goBalance" (click)="goJS($event)">
+      <span class="">去结算</span>
+    </div>
+    <div class="fr allPrice">
+      <span>总价</span>
+      <span>{{AllPrice}}</span>
+    </div>
+    <div class="fr choice">
+      <span class="">已经选择</span>
+      <span class="">{{goodsNumber}}</span>
+      <span class="">件</span>
+    </div>
+
+  </div>
+</section>

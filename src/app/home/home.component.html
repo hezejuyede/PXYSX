@@ -1,0 +1,1137 @@
+<section class="index-banner">
+  <div class="banner-nav">
+    <div class="" (click)="hideBanner($event)">
+      亿成生鲜商品分类
+    </div>
+    <div class="">
+      亿成商品头条
+    </div>
+  </div>
+  <div class="clearfix banner-content">
+    <div class="banner-content-left">
+      <div class="banner-content-left-nav"
+           (click)="showBanner1($event)">
+        <div class="">
+          <i class="iconfont icon-haixianshuichan"></i>
+        </div>
+        <div class="">
+          <p class="">海鲜水产</p>
+          <p class="">
+            <span>螃蟹</span>
+            <span>鲜鱼</span>
+            <span>大虾</span>
+            <i class="iconfont icon-right-trangle"></i>
+          </p>
+        </div>
+      </div>
+      <div class="banner-content-left-nav"
+           (click)="showBanner2($event)">
+        <div class="">
+          <i class="iconfont icon-roulei"></i>
+        </div>
+        <div class="">
+          <p class="">精选肉类</p>
+          <p class="">
+            <span>猪肉</span>
+            <span>牛肉</span>
+            <span>羊肉</span>
+            <i class="iconfont icon-right-trangle"></i>
+          </p>
+
+        </div>
+      </div>
+      <div class="banner-content-left-nav"
+           (click)="showBanner3($event)">
+        <div class="">
+          <i class="iconfont icon-huoguo"></i>
+        </div>
+        <div class="">
+          <p class="">火锅系列</p>
+          <p class="">
+            <span>丸子</span>
+            <span>调料</span>
+            <span>底料</span>
+            <i class="iconfont icon-right-trangle"></i>
+          </p>
+        </div>
+      </div>
+      <div class="banner-content-left-nav"
+           (click)="showBanner4($event)">
+        <div class="">
+          <i class="iconfont icon-ji"></i>
+        </div>
+        <div class="">
+          <p class="">优选鸡鸭</p>
+          <p class="">
+            <span>整鸡</span>
+            <span>整鸭</span>
+            <i class="iconfont icon-right-trangle"></i>
+          </p>
+        </div>
+      </div>
+      <div class="banner-content-left-nav"
+           (click)="showBanner5($event)">
+        <div class="">
+          <i class="iconfont icon-miandian"></i>
+        </div>
+        <div class="">
+          <p class="">特产面点</p>
+          <p class="">
+            <span>馒头</span>
+            <span>水饺</span>
+            <span>面条</span>
+            <i class="iconfont icon-right-trangle"></i>
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div [ngClass]="{rec:isRec1}">
+      <div class="left-nav-show">
+        <div class="left-nav-show-left">
+          <div class="" *ngFor="let indexBannerNav of bannerNav1">
+            <span class="">{{indexBannerNav.goodsName}}</span>
+            <i class="iconfont icon-right-trangle"></i>
+          </div>
+        </div>
+        <div class="left-nav-show-right">
+          <div class="" *ngFor="let indexBannerNavS of bannerNavS2">
+            <div class="" *ngFor="let indexBannerNavS1 of indexBannerNavS">
+              <a class="">{{indexBannerNavS1.name}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div [ngClass]="{rec:isRec2}">
+      <div class="left-nav-show">
+        <div class="left-nav-show-left">
+          <div class="" *ngFor="let indexBannerNav of bannerNav2">
+            <span class="">{{indexBannerNav.goodsName}}</span>
+            <i class="iconfont icon-right-trangle"></i>
+          </div>
+        </div>
+        <div class="left-nav-show-right">
+          <div class="" *ngFor="let indexBannerNavS of bannerNavS4">
+            <div class="" *ngFor="let indexBannerNavS1 of indexBannerNavS">
+              <a class="">{{indexBannerNavS1.name}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div [ngClass]="{rec:isRec3}">
+      <div class="left-nav-show">
+        <div class="left-nav-show-left">
+          <div class="" *ngFor="let indexBannerNav of bannerNav3">
+            <span class="">{{indexBannerNav.goodsName}}</span>
+            <i class="iconfont icon-right-trangle"></i>
+          </div>
+        </div>
+        <div class="left-nav-show-right">
+          <div class="" *ngFor="let indexBannerNavS of bannerNavS6">
+            <div class="" *ngFor="let indexBannerNavS1 of indexBannerNavS">
+              <a class="">{{indexBannerNavS1.name}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div [ngClass]="{rec:isRec4}">
+      <div class="left-nav-show">
+        <div class="left-nav-show-left">
+          <div class="" *ngFor="let indexBannerNav of bannerNav4">
+            <span class="">{{indexBannerNav.goodsName}}</span>
+            <i class="iconfont icon-right-trangle"></i>
+          </div>
+        </div>
+        <div class="left-nav-show-right">
+          <div class="" *ngFor="let indexBannerNavS of bannerNavS8">
+            <div class="" *ngFor="let indexBannerNavS1 of indexBannerNavS">
+              <a class="">{{indexBannerNavS1.name}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div [ngClass]="{rec:isRec5}">
+      <div class="left-nav-show"
+      >
+        <div class="left-nav-show-left">
+          <div class=""
+
+               *ngFor="let indexBannerNav of bannerNav5">
+            <span class="">{{indexBannerNav.goodsName}}</span>
+            <i class="iconfont icon-right-trangle"></i>
+          </div>
+        </div>
+        <div class="left-nav-show-right">
+          <div class="" *ngFor="let indexBannerNavS of bannerNavS10">
+            <div class="" *ngFor="let indexBannerNavS1 of indexBannerNavS">
+              <a class="">{{indexBannerNavS1.name}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-content-center" style="overflow: hidden">
+      <div class="" *ngFor=" let img of banner">
+        <img src="{{img.img}}" alt="" class="">
+      </div>
+    </div>
+    <div class="banner-content-right" >
+      <div class="right-top">
+        <h3 class="" style="font-size: 16px">生鲜头条</h3>
+        <div *ngFor="let headerLines of headerLine">
+          <p style="font-size: 12px">{{headerLines.text}}</p>
+        </div>
+      </div>
+      <div class="right-bottom">
+        <img src="../../assets/imgs/4.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="banner-icon">
+    <div class="banner-icon-div">
+      <div class="">
+        <i class="iconfont icon-shipinanquanicon"></i>
+      </div>
+      <div class="">
+        <p class="">食品安全</p>
+        <p class=""><span>精选生鲜</span> <span>严格质检</span></p>
+      </div>
+    </div>
+    <div class="banner-icon-div">
+      <div class="">
+        <i class="iconfont icon-quanchenglenglian"></i>
+      </div>
+      <div class="">
+        <p class="">全程冷链</p>
+        <p class=""><span>自营物流</span> <span>安全可控</span></p>
+      </div>
+    </div>
+    <div class="banner-icon-div">
+      <div class="">
+        <i class="iconfont icon-yudashuye"></i>
+      </div>
+      <div class="">
+        <p class="">鲜活天然</p>
+        <p class=""><span>绿色生态</span> <span>京东精选</span></p>
+      </div>
+    </div>
+    <div class="banner-icon-div">
+      <div class="">
+        <i class="iconfont icon-cailanzi-"></i>
+      </div>
+      <div class="">
+        <p class="">产地直采</p>
+        <p class=""><span>限定产源</span> <span>质量保证</span></p>
+      </div>
+    </div>
+    <div class="banner-icon-div">
+      <div class="">
+        <i class="iconfont icon-shouhou"></i>
+      </div>
+      <div class="">
+        <p class="">无忧售后</p>
+        <p class=""><span>优鲜赔偿</span> <span>售后通道</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="index-sk">
+  <div class="index-sk-time">
+    <div [ngClass]="{changeTime:ischangeTime1}" (click)="changeTimeMorning($event)">
+      <div class="index-sk-time-morning">
+        <i class="iconfont icon-zaoshang-copy"></i>
+      </div>
+      <div class="" style="line-height: 25px">
+        <p class="">早市抢鲜</p>
+        <p class="">10:00 - 17:00</p>
+      </div>
+    </div>
+    <div [ngClass]="{changeTime:ischangeTime2}" (click)="changeTimeNoon($event)">
+      <div class="index-sk-time-noon">
+        <i class="iconfont icon-zhongwu"></i>
+      </div>
+      <div class="" style="line-height: 25px">
+        <p class=""> 午市抢鲜</p>
+        <p class="">17:00 - 22:00</p>
+      </div>
+    </div>
+    <div [ngClass]="{changeTime:ischangeTime3}" (click)="changeTimeNight($event)">
+      <div class="index-sk-time-night">
+        <i class="iconfont icon-wanshangchangci"></i>
+      </div>
+      <div class="" style="line-height: 25px">
+        <p class="">晚市预告</p>
+        <p class="">22:00 开始</p>
+      </div>
+    </div>
+  </div>
+  <div class="index-sk-djs">
+    <div class="index-sk-djs-text">距离本场开始还有</div>
+    <div class="index-sk-djs-time">
+      <span>03</span>
+      <span>:</span>
+      <span>59</span>
+      <span>:</span>
+      <span>59</span>
+    </div>
+  </div>
+  <div class="index-sk-content">
+    <div [ngClass]="{changeShow:ischangeShow1}">
+      <i class="iconfont icon-left-trangle"></i>
+      <i class="iconfont icon-right-trangle"></i>
+      <div class="index-sk-content-template">
+        <div class="goods-template" *ngFor=" let goods of jx1">
+          <div class="goods-template-price">
+            ￥{{goods.price}}
+          </div>
+          <img src="{{goods.img}}">
+          <p class="goods-title">{{goods.title}}</p>
+          <p class="nowbuy" (click)="nowBuy($event)">
+            立即购买
+          </p>
+        </div>
+      </div>
+    </div>
+    <div [ngClass]="{changeShow:ischangeShow2}">
+      <i class="iconfont icon-left-trangle"></i>
+      <i class="iconfont icon-right-trangle"></i>
+      <div class="index-sk-content-template">
+        <div class="goods-template" *ngFor=" let goods of jx2">
+          <div class="goods-template-price">
+            ￥{{goods.price}}
+          </div>
+          <img src="{{goods.img}}">
+          <p class="goods-title">{{goods.title}}</p>
+          <p class="nowbuy" (click)="nowBuy($event)">
+            立即购买
+          </p>
+        </div>
+      </div>
+    </div>
+    <div [ngClass]="{changeShow:ischangeShow3}">
+      <i class="iconfont icon-left-trangle"></i>
+      <i class="iconfont icon-right-trangle"></i>
+      <div class="index-sk-content-template">
+        <div class="goods-template" *ngFor=" let goods of jx3">
+          <div class="goods-template-price">
+            ￥{{goods.price}}
+          </div>
+          <img src="{{goods.img}}">
+          <p class="goods-title">{{goods.title}}</p>
+          <p class="nowbuy" (click)="nowBuy($event)">
+            立即购买
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="index-tsbuy">
+  <div class="index-tsbuy-top">
+    <h3>特/色/购</h3>
+    <p class="">FEATURED FRESH</p>
+  </div>
+  <div class="index-tsbuy-center">
+    <div class="index-tsbuy-center-content">
+      <div class="index-tsbuy-center-template" *ngFor="let tsBuy1 of tsbuy1">
+        <div class="template-price">
+          <p class="">￥{{tsBuy1.price}}</p>
+          <p class="">{{tsBuy1.size}}kg</p>
+        </div>
+        <img src="{{tsBuy1.img}}" alt="">
+        <p class="template-title">
+          {{tsBuy1.title}}
+        </p>
+        <p class="template-addCart" (click)="addCart($event)">加入购物车</p>
+      </div>
+    </div>
+  </div>
+  <div class="index-tsbuy-bottom">
+    <div class="index-tsbuy-bottom-content">
+      <div class="index-tsbuy-bottom-left">
+        <div class="tsbuy-bottom-left-top">
+          <h3 class="">东家菜</h3>
+          <p class="">妙手烹佳肴 东家有鲜食</p>
+          <p class="">更多佳肴 > </p>
+        </div>
+        <div class="tsbuy-bottom-left-bottom">
+          <div class="tsbuy-bottom-left-bottom-one" *ngFor="let tsBuy2 of tsbuy2">
+            <div class="bottom-one-img">
+              <img src="{{tsBuy2.img}}" alt="">
+            </div>
+            <div class="bottom-one-title">
+              <p class="">{{tsBuy2.title}}</p>
+              <p class="">{{tsBuy2.size}}</p>
+              <p class="">购买食材 ></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="index-tsbuy-bottom-right">
+        <div class="index-tsbuy-bottom-right-top">
+          <div class="index-tsbuy-bottom-right-top-left">
+            <i class="iconfont icon-mianfeishichi"></i>
+            <p class="lysc" >0元试吃</p>
+            <p class="gdsc" >更多试吃 > </p>
+          </div>
+          <div class="index-tsbuy-bottom-right-top-center"
+               *ngFor="let tsBuy3 of tsbuy3">
+            <div class="">
+              <p class="">{{tsBuy3.title}}{{tsBuy3.price}}元</p>
+              <p class="">
+                提供{{tsBuy3.number}}份
+                已有{{tsBuy3.baoMing}}人报名
+              </p>
+              <p class="">剩余00时00分00秒</p>
+              <p class="join">立即报名 ></p>
+            </div>
+            <div class="">
+              <img src="{{tsBuy3.img}}" style="width: 100%">
+            </div>
+          </div>
+        </div>
+        <div class="index-tsbuy-bottom-right-bottom">
+          <div class="index-tsbuy-bottom-right-bottom-left">
+            <div class="">
+              <i class="iconfont icon-xinpinbiaoqian"></i>
+              <p class="xp">新品初见</p>
+              <p class="ms">更多美食 ></p>
+            </div>
+          </div>
+          <div class="index-tsbuy-bottom-right-bottom-right">
+            <div class="index-tsbuy-bottom-right-bottom-right-top">
+              <p class="">初见倾心 一口爱上</p>
+              <p class="">每口都如初见 亿成生鲜 搜罗新鲜美味</p>
+              <p class="">查看更多 ></p>
+            </div>
+            <div class="index-tsbuy-bottom-right-bottom-right-bottom">
+              <div class="" *ngFor="let tsBuy4 of tsbuy4">
+                <img src="{{tsBuy4.img}}" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="index-recommend">
+  <div class="index-recommend-top">
+    <h3 class="">身/临/食/感</h3>
+    <p class="">INSPIRATION FRESH</p>
+  </div>
+  <div class="index-recommend-center">
+    <ul class="index-recommend-center-nav">
+      <li class="" (click)="changeRecommendShow1($event)">料理食材</li>
+      <li class="" (click)="changeRecommendShow2($event)">火锅诱惑</li>
+      <li class="" (click)="changeRecommendShow3($event)">深夜食堂</li>
+      <li class="" (click)="changeRecommendShow4($event)">亿成精选</li>
+    </ul>
+    <div class="index-recommend-center-text">
+      <div [ngClass]="{rec:isrec1}">
+        <p class="">料理食材</p>
+        <p class="">简单不减追求，健康有料一步味道</p>
+      </div>
+      <div [ngClass]="{rec:isrec2}" >
+        <p class="">火锅诱惑</p>
+        <p class="">简单不减追求，健康有料一步味道</p>
+      </div>
+      <div [ngClass]="{rec:isrec3}" >
+        <p class="">深夜食堂</p>
+        <p class="">简单不减追求，健康有料一步味道</p>
+      </div>
+      <div [ngClass]="{rec:isrec4}" >
+        <p class="">亿成精选</p>
+        <p class="">简单不减追求，健康有料一步味道</p>
+      </div>
+    </div>
+    <div class="index-recommend-center-content">
+      <div [ngClass]="{rec:isrec5}">
+        <div class="index-recommend-center-content-goods"
+             *ngFor = "let recommend1Pc of recommend1"
+        >
+          <img src="{{recommend1Pc.img}}" alt="" class="">
+          <p class="goods-title">
+            {{recommend1Pc.title}}
+          </p>
+          <p class="goods-price">
+            ¥{{recommend1Pc.price}}
+          </p>
+          <p class="addCart" (click)="addCart($event)">加入购物车</p>
+        </div>
+      </div>
+      <div [ngClass]="{rec:isrec6}">
+        <div class="index-recommend-center-content-goods"
+             *ngFor = "let recommend1Pc of recommend2"
+        >
+          <img src="{{recommend1Pc.img}}" alt="" class="">
+          <p class="goods-title">
+            {{recommend1Pc.title}}
+          </p>
+          <p class="goods-price">
+            ¥{{recommend1Pc.price}}
+          </p>
+          <p class="addCart" (click)="addCart($event)">加入购物车</p>
+        </div>
+      </div>
+      <div [ngClass]="{rec:isrec7}">
+        <div class="index-recommend-center-content-goods"
+             *ngFor = "let recommend1Pc of recommend3"
+        >
+          <img src="{{recommend1Pc.img}}" alt="" class="">
+          <p class="goods-title">
+            {{recommend1Pc.title}}
+          </p>
+          <p class="goods-price">
+            ¥{{recommend1Pc.price}}
+          </p>
+          <p class="addCart" (click)="addCart($event)">加入购物车</p>
+        </div>
+      </div>
+      <div [ngClass]="{rec:isrec8}">
+        <div class="index-recommend-center-content-goods"
+             *ngFor = "let recommend1Pc of recommend4"
+        >
+          <img src="{{recommend1Pc.img}}" alt="" class="">
+          <p class="goods-title">
+            {{recommend1Pc.title}}
+          </p>
+          <p class="goods-price">
+            ¥{{recommend1Pc.price}}
+          </p>
+          <p class="addCart" (click)="addCart($event)">加入购物车</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="index-recommend-bottom">
+    <div [ngClass]="{rec:isrec9}">
+      <img src="../../assets/imgs/r1.png" alt="" class="">
+    </div>
+    <div [ngClass]="{rec:isrec10}" >
+      <img src="../../assets/imgs/r2.png" alt="" class="">
+    </div>
+    <div [ngClass]="{rec:isrec11}" >
+      <img src="../../assets/imgs/r3.png" alt="" class="">
+    </div>
+    <div [ngClass]="{rec:isrec12}" >
+      <img src="../../assets/imgs/r4.png" alt="" class="">
+    </div>
+  </div>
+</section>
+<section class="goodsList" >
+  <div class="goodsList-top">
+    <h3 class="">亿/成/生/鲜</h3>
+    <p class="">YC FRESH</p>
+  </div>
+  <div class="clearfix goodsList-center">
+    <div class="goodsList-center-left" *ngFor="let PX of dx">
+      <h3 class="">
+        {{PX.goodsName}}
+      </h3>
+      <h4>
+        {{PX.title}}
+      </h4>
+      <div class="">
+        <div class="" *ngFor="let PcPX of dx2">
+          <p class="" *ngFor="let PcPX1 of PcPX">{{PcPX1.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="goodsList-center-center" *ngFor="let bannerImg of dx3">
+      <div class="" *ngFor="let bannerImg1 of bannerImg">
+        <img src="{{bannerImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+    <div class="goodsList-center-right" *ngFor="let leftImg of dx4">
+      <div class="" *ngFor="let leftImg1 of leftImg">
+        <img src="{{leftImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="clearfix goodsList-bottom">
+    <div class="" *ngFor="let goodsImg of dx5">
+      <div class="template" *ngFor="let goodsImg1 of goodsImg">
+        <div class="img">
+          <img src="{{goodsImg1.img}}" alt="">
+        </div>
+        <div class="title">
+          <p class="">{{goodsImg1.title}}</p>
+        </div>
+        <div class="price">
+          <p class="">{{goodsImg1.price}}</p>
+        </div>
+        <div class="addCart">
+          <p class="">加入购物车</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="goodsList" >
+  <div class="goodsList-top">
+    <h3 class="">亿/成/生/鲜</h3>
+    <p class="">YC FRESH</p>
+  </div>
+  <div class="clearfix goodsList-center">
+    <div class="goodsList-center-left" *ngFor="let PX of xy">
+      <h3 class="">
+        {{PX.goodsName}}
+      </h3>
+      <h4>
+        {{PX.title}}
+      </h4>
+      <div class="">
+        <div class="" *ngFor="let PcPX of xy2">
+          <p class="" *ngFor="let PcPX1 of PcPX">{{PcPX1.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="goodsList-center-center" *ngFor="let bannerImg of xy3">
+      <div class="" *ngFor="let bannerImg1 of bannerImg">
+        <img src="{{bannerImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+    <div class="goodsList-center-right" *ngFor="let leftImg of xy4">
+      <div class="" *ngFor="let leftImg1 of leftImg">
+        <img src="{{leftImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="clearfix goodsList-bottom">
+    <div class="" *ngFor="let goodsImg of xy5">
+      <div class="template" *ngFor="let goodsImg1 of goodsImg">
+        <div class="img">
+          <img src="{{goodsImg1.img}}" alt="">
+        </div>
+        <div class="title">
+          <p class="">{{goodsImg1.title}}</p>
+        </div>
+        <div class="price">
+          <p class="">{{goodsImg1.price}}</p>
+        </div>
+        <div class="addCart">
+          <p class="">加入购物车</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="goodsList" >
+  <div class="goodsList-top">
+    <h3 class="">亿/成/生/鲜</h3>
+    <p class="">YC FRESH</p>
+  </div>
+  <div class="clearfix goodsList-center">
+    <div class="goodsList-center-left" *ngFor="let PX of px">
+      <h3 class="">
+        {{PX.goodsName}}
+      </h3>
+      <div class="">
+        <div class="" *ngFor="let PcPX of px2">
+          <p class="" *ngFor="let PcPX1 of PcPX">{{PcPX1.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="goodsList-center-center" *ngFor="let bannerImg of px3">
+      <div class="" *ngFor="let bannerImg1 of bannerImg">
+        <img src="{{bannerImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+    <div class="goodsList-center-right" *ngFor="let leftImg of px4">
+      <div class="" *ngFor="let leftImg1 of leftImg">
+        <img src="{{leftImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="clearfix goodsList-bottom">
+    <div class="" *ngFor="let goodsImg of px5">
+      <div class="template" *ngFor="let goodsImg1 of goodsImg">
+        <div class="img">
+          <img src="{{goodsImg1.img}}" alt="">
+        </div>
+        <div class="title">
+          <p class="">{{goodsImg1.title}}</p>
+        </div>
+        <div class="price">
+          <p class="">{{goodsImg1.price}}</p>
+        </div>
+        <div class="addCart">
+          <p class="">加入购物车</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="goodsList" >
+  <div class="goodsList-top">
+    <h3 class="">亿/成/生/鲜</h3>
+    <p class="">YC FRESH</p>
+  </div>
+  <div class="clearfix goodsList-center">
+    <div class="goodsList-center-left" *ngFor="let PX of zr">
+      <h3 class="">
+        {{PX.goodsName}}
+      </h3>
+      <h4>
+        {{PX.title}}
+      </h4>
+      <div class="">
+        <div class="" *ngFor="let PcPX of zr2">
+          <p class="" *ngFor="let PcPX1 of PcPX">{{PcPX1.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="goodsList-center-center" *ngFor="let bannerImg of zr3">
+      <div class="" *ngFor="let bannerImg1 of bannerImg">
+        <img src="{{bannerImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+    <div class="goodsList-center-right" *ngFor="let leftImg of zr4">
+      <div class="" *ngFor="let leftImg1 of leftImg">
+        <img src="{{leftImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="clearfix goodsList-bottom">
+    <div class="" *ngFor="let goodsImg of zr5">
+      <div class="template" *ngFor="let goodsImg1 of goodsImg">
+        <div class="img">
+          <img src="{{goodsImg1.img}}" alt="">
+        </div>
+        <div class="title">
+          <p class="">{{goodsImg1.title}}</p>
+        </div>
+        <div class="price">
+          <p class="">{{goodsImg1.price}}</p>
+        </div>
+        <div class="addCart">
+          <p class="">加入购物车</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="goodsList" >
+  <div class="goodsList-top">
+    <h3 class="">亿/成/生/鲜</h3>
+    <p class="">YC FRESH</p>
+  </div>
+  <div class="clearfix goodsList-center">
+    <div class="goodsList-center-left" *ngFor="let PX of nr">
+      <h3 class="">
+        {{PX.goodsName}}
+      </h3>
+      <h4>
+        {{PX.title}}
+      </h4>
+      <div class="">
+        <div class="" *ngFor="let PcPX of nr2">
+          <p class="" *ngFor="let PcPX1 of PcPX">{{PcPX1.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="goodsList-center-center" *ngFor="let bannerImg of nr3">
+      <div class="" *ngFor="let bannerImg1 of bannerImg">
+        <img src="{{bannerImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+    <div class="goodsList-center-right" *ngFor="let leftImg of nr4">
+      <div class="" *ngFor="let leftImg1 of leftImg">
+        <img src="{{leftImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="clearfix goodsList-bottom">
+    <div class="" *ngFor="let goodsImg of nr5">
+      <div class="template" *ngFor="let goodsImg1 of goodsImg">
+        <div class="img">
+          <img src="{{goodsImg1.img}}" alt="">
+        </div>
+        <div class="title">
+          <p class="">{{goodsImg1.title}}</p>
+        </div>
+        <div class="price">
+          <p class="">{{goodsImg1.price}}</p>
+        </div>
+        <div class="addCart">
+          <p class="">加入购物车</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="goodsList" >
+  <div class="goodsList-top">
+    <h3 class="">亿/成/生/鲜</h3>
+    <p class="">YC FRESH</p>
+  </div>
+  <div class="clearfix goodsList-center">
+    <div class="goodsList-center-left" *ngFor="let PX of yr">
+      <h3 class="">
+        {{PX.goodsName}}
+      </h3>
+      <h4>
+        {{PX.title}}
+      </h4>
+      <div class="">
+        <div class="" *ngFor="let PcPX of yr2">
+          <p class="" *ngFor="let PcPX1 of PcPX">{{PcPX1.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="goodsList-center-center" *ngFor="let bannerImg of yr3">
+      <div class="" *ngFor="let bannerImg1 of bannerImg">
+        <img src="{{bannerImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+    <div class="goodsList-center-right" *ngFor="let leftImg of yr4">
+      <div class="" *ngFor="let leftImg1 of leftImg">
+        <img src="{{leftImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="clearfix goodsList-bottom">
+    <div class="" *ngFor="let goodsImg of yr5">
+      <div class="template" *ngFor="let goodsImg1 of goodsImg">
+        <div class="img">
+          <img src="{{goodsImg1.img}}" alt="">
+        </div>
+        <div class="title">
+          <p class="">{{goodsImg1.title}}</p>
+        </div>
+        <div class="price">
+          <p class="">{{goodsImg1.price}}</p>
+        </div>
+        <div class="addCart">
+          <p class="">加入购物车</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="goodsList" >
+  <div class="goodsList-top">
+    <h3 class="">亿/成/生/鲜</h3>
+    <p class="">YC FRESH</p>
+  </div>
+  <div class="clearfix goodsList-center">
+    <div class="goodsList-center-left" *ngFor="let PX of jr">
+      <h3 class="">
+        {{PX.goodsName}}
+      </h3>
+      <h4>
+        {{PX.title}}
+      </h4>
+      <div class="">
+        <div class="" *ngFor="let PcPX of jr2">
+          <p class="" *ngFor="let PcPX1 of PcPX">{{PcPX1.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="goodsList-center-center" *ngFor="let bannerImg of jr3">
+      <div class="" *ngFor="let bannerImg1 of bannerImg">
+        <img src="{{bannerImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+    <div class="goodsList-center-right" *ngFor="let leftImg of jr4">
+      <div class="" *ngFor="let leftImg1 of leftImg">
+        <img src="{{leftImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="clearfix goodsList-bottom">
+    <div class="" *ngFor="let goodsImg of jr5">
+      <div class="template" *ngFor="let goodsImg1 of goodsImg">
+        <div class="img">
+          <img src="{{goodsImg1.img}}" alt="">
+        </div>
+        <div class="title">
+          <p class="">{{goodsImg1.title}}</p>
+        </div>
+        <div class="price">
+          <p class="">{{goodsImg1.price}}</p>
+        </div>
+        <div class="addCart">
+          <p class="">加入购物车</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="goodsList" >
+  <div class="goodsList-top">
+    <h3 class="">亿/成/生/鲜</h3>
+    <p class="">YC FRESH</p>
+  </div>
+  <div class="clearfix goodsList-center">
+    <div class="goodsList-center-left" *ngFor="let PX of yz">
+      <h3 class="">
+        {{PX.goodsName}}
+      </h3>
+      <h4>
+        {{PX.title}}
+      </h4>
+      <div class="">
+        <div class="" *ngFor="let PcPX of yz2">
+          <p class="" *ngFor="let PcPX1 of PcPX">{{PcPX1.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="goodsList-center-center" *ngFor="let bannerImg of yz3">
+      <div class="" *ngFor="let bannerImg1 of bannerImg">
+        <img src="{{bannerImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+    <div class="goodsList-center-right" *ngFor="let leftImg of yz4">
+      <div class="" *ngFor="let leftImg1 of leftImg">
+        <img src="{{leftImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="clearfix goodsList-bottom">
+    <div class="" *ngFor="let goodsImg of yz5">
+      <div class="template" *ngFor="let goodsImg1 of goodsImg">
+        <div class="img">
+          <img src="{{goodsImg1.img}}" alt="">
+        </div>
+        <div class="title">
+          <p class="">{{goodsImg1.title}}</p>
+        </div>
+        <div class="price">
+          <p class="">{{goodsImg1.price}}</p>
+        </div>
+        <div class="addCart">
+          <p class="">加入购物车</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="goodsList" >
+  <div class="goodsList-top">
+    <h3 class="">亿/成/生/鲜</h3>
+    <p class="">YC FRESH</p>
+  </div>
+  <div class="clearfix goodsList-center">
+    <div class="goodsList-center-left" *ngFor="let PX of tl">
+      <h3 class="">
+        {{PX.goodsName}}
+      </h3>
+      <h4>
+        {{PX.title}}
+      </h4>
+      <div class="">
+        <div class="" *ngFor="let PcPX of tl2">
+          <p class="" *ngFor="let PcPX1 of PcPX">{{PcPX1.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="goodsList-center-center" *ngFor="let bannerImg of tl3">
+      <div class="" *ngFor="let bannerImg1 of bannerImg">
+        <img src="{{bannerImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+    <div class="goodsList-center-right" *ngFor="let leftImg of tl4">
+      <div class="" *ngFor="let leftImg1 of leftImg">
+        <img src="{{leftImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="clearfix goodsList-bottom">
+    <div class="" *ngFor="let goodsImg of tl5">
+      <div class="template" *ngFor="let goodsImg1 of goodsImg">
+        <div class="img">
+          <img src="{{goodsImg1.img}}" alt="">
+        </div>
+        <div class="title">
+          <p class="">{{goodsImg1.title}}</p>
+        </div>
+        <div class="price">
+          <p class="">{{goodsImg1.price}}</p>
+        </div>
+        <div class="addCart">
+          <p class="">加入购物车</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="goodsList" >
+  <div class="goodsList-top">
+    <h3 class="">亿/成/生/鲜</h3>
+    <p class="">YC FRESH</p>
+  </div>
+  <div class="clearfix goodsList-center">
+    <div class="goodsList-center-left" *ngFor="let PX of wz">
+      <h3 class="">
+        {{PX.goodsName}}
+      </h3>
+      <h4>
+        {{PX.title}}
+      </h4>
+      <div class="">
+        <div class="" *ngFor="let PcPX of wz2">
+          <p class="" *ngFor="let PcPX1 of PcPX">{{PcPX1.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="goodsList-center-center" *ngFor="let bannerImg of wz3">
+      <div class="" *ngFor="let bannerImg1 of bannerImg">
+        <img src="{{bannerImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+    <div class="goodsList-center-right" *ngFor="let leftImg of wz4">
+      <div class="" *ngFor="let leftImg1 of leftImg">
+        <img src="{{leftImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="clearfix goodsList-bottom">
+    <div class="" *ngFor="let goodsImg of wz5">
+      <div class="template" *ngFor="let goodsImg1 of goodsImg">
+        <div class="img">
+          <img src="{{goodsImg1.img}}" alt="">
+        </div>
+        <div class="title">
+          <p class="">{{goodsImg1.title}}</p>
+        </div>
+        <div class="price">
+          <p class="">{{goodsImg1.price}}</p>
+        </div>
+        <div class="addCart">
+          <p class="">加入购物车</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="goodsList" >
+  <div class="goodsList-top">
+    <h3 class="">亿/成/生/鲜</h3>
+    <p class="">YC FRESH</p>
+  </div>
+  <div class="clearfix goodsList-center">
+    <div class="goodsList-center-left" *ngFor="let PX of md">
+      <h3 class="">
+        {{PX.goodsName}}
+      </h3>
+      <h4>
+        {{PX.title}}
+      </h4>
+      <div class="">
+        <div class="" *ngFor="let PcPX of md2">
+          <p class="" *ngFor="let PcPX1 of PcPX">{{PcPX1.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="goodsList-center-center" *ngFor="let bannerImg of md3">
+      <div class="" *ngFor="let bannerImg1 of bannerImg">
+        <img src="{{bannerImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+    <div class="goodsList-center-right" *ngFor="let leftImg of md4">
+      <div class="" *ngFor="let leftImg1 of leftImg">
+        <img src="{{leftImg1.img}}" alt="" class="">
+      </div>
+
+    </div>
+  </div>
+  <div class="clearfix goodsList-bottom">
+    <div class="" *ngFor="let goodsImg of md5">
+      <div class="template" *ngFor="let goodsImg1 of goodsImg">
+        <div class="img">
+          <img src="{{goodsImg1.img}}" alt="">
+        </div>
+        <div class="title">
+          <p class="">{{goodsImg1.title}}</p>
+        </div>
+        <div class="price">
+          <p class="">{{goodsImg1.price}}</p>
+        </div>
+        <div class="addCart">
+          <p class="">加入购物车</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="ysx-userSay">
+  <div class="ysx-userSay-top">
+    <h3 class="">食／鲜／者／说</h3>
+    <p class="">CUSTOMER SAYS</p>
+  </div>
+  <div class="ul" *ngFor="let PcUserSay1 of userSay; index as i">
+    <div class="ulShow" *ngIf="i == UserSayNumber">
+      <div class="li" *ngFor="let PcUserSay1 of PcUserSay1">
+        <div class="userSays-template">
+          <div class="userSays-template-avatar">
+            <img src="{{PcUserSay1.avatar}}" alt="" class="">
+            <p class="">{{PcUserSay1.name}}</p>
+          </div>
+          <div class="userSays-template-content">
+            <div class="userSays-template-content-imgs">
+              <img src="{{PcUserSay1.img}}" alt="" class="">
+            </div>
+            <div class="userSays-template-content-infos">
+              <p class="">
+                <i class="iconfont icon-xingzhuang60kaobei2"></i>
+                <i class="iconfont icon-xingzhuang60kaobei2"></i>
+                <i class="iconfont icon-xingzhuang60kaobei2"></i>
+                <i class="iconfont icon-xingzhuang60kaobei2"></i>
+                <i class="iconfont icon-xingzhuang60kaobei2"></i>
+              </p>
+              <p class="">{{PcUserSay1.content}}</p>
+              <p class="">{{PcUserSay1.time}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ol>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ol>
+</section>
+

@@ -1,0 +1,95 @@
+@import "../../assets/sass/base";
+@import "../../assets/icon/iconfont.css";
+
+.ysxfooter {
+  background-color: $color-green;
+  .ysxfooter-top {
+    height: 140px;
+    border: 1px solid $color-background-d;
+    > div {
+      float: left;
+      width: 20%;
+      height: 40px;
+      margin-top: 47.5px;
+      box-sizing: border-box;
+      div:first-child {
+        height: 40px;
+        line-height: 40px;
+        float: left;
+        margin-left: 10%;
+        margin-right: 2%;
+        .icon-shipinanquanicon, .icon-quanchenglenglian, .icon-yudashuye, .icon-cailanzi-, .icon-shouhou {
+          font-size: $font-size-large-xxxxx;
+          color: $color-white;
+        }
+
+      }
+      div:last-child {
+        height: 40px;
+        float: left;
+        p:first-child {
+          font-size: $font-size-large;
+          color: $color-white;
+        }
+        p:last-child {
+          font-size: $font-size-small;
+          color: $color-F0;
+        }
+
+      }
+    }
+    > div {
+      border-right: 1px solid $color-background-d;
+    }
+    > div:last-child {
+      border: none;
+    }
+  }
+  .ysxfooter-center {
+    height: 210px;
+  >div{
+    float: left;
+    width: 16%;
+    margin-left: 0.6%;
+    text-align: center;
+    margin-top: 40px;
+    img{
+      width: 70%;
+    }
+    h3{
+      font-size: $font-size-large;
+      margin-bottom: 25px;
+      color: $color-white;
+    }
+    p{
+      color: $color-F0;
+    }
+
+
+
+
+
+  }
+  }
+  .ysxfooter-bottom{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+}
+@media only screen and (max-width: 480px) {
+  .ysxfooter{
+    width: 480px;
+    text-align: center;
+    .ysxfooter-top-div{
+      div:last-child{
+        p:last-child{
+          span{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

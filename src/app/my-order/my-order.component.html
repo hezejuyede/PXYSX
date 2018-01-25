@@ -1,0 +1,12 @@
+<section class="ysx-MyOrder">
+  <div class="MyOrder-top">
+    <a (click)="myOrder($event)"
+       [routerLink]="['/MyOrderContent',product.title]"
+       *ngFor="let product of products"
+    >
+      <i class="{{product.icon}}"></i>
+      <span class="">{{product.title}}</span>
+    </a>
+  </div>
+  <div class="MyOrder-bottom"></div>
+</section>
